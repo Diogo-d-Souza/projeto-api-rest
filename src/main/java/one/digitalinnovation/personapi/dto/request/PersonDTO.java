@@ -32,6 +32,14 @@ public class PersonDTO {
     @CPF
     private String cpf;
 
+    @NotEmpty
+    @Size(min = 8, max =9)
+    private String cep;
+
+    @NotEmpty
+    @Size(min = 2, max = 30)
+    private String cidade;
+
     private String birthDate;
 
     @Valid
